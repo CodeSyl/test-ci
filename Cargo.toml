@@ -1,0 +1,18 @@
+[package]
+name = "recorder"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-graphql= {version="4.0"}
+async-graphql-axum = {version="4.0"}
+axum = {version="0.5.16"}
+tokio = {version="1.0", features=["full"]}
+tracing = "0.1.32"
+tracing-subscriber = { version = "0.3.10", features = ["env-filter"] }
+uuid = { version = "1.1.2", features = ["serde", "v4"] }
+async-trait = "0.1.57"
+
+
